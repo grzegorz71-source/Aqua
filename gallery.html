@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria realizacji ogrodów</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Galeria realizacji moich akwariów</h1>
+        <hr>
+        <a href="index.html" class="btn-back">Powrót do strony głównej</a>
+        <hr>
+        <div class="gallery-full">
+
+            <img src="img/2012-08-30 11.17.45.jpg" alt="aqua 1">
+            <img src="img/2012-11-19 18.30.45.jpg" alt="aqua 2">
+            <img src="img/2012-11-19 18.30.45.jpg" alt="aqua 3">
+          
+            <img src="img/20150105_134045.jpg" alt="aqua 4">
+            <img src="img/20150606_214730.jpg" alt="aqua 5">
+            <img src="img/20150909_154741.jpg" alt="aqua 6">
+            <img src="img/20151216_190654.jpg" alt="aqua 7">
+            <img src="img/DSCF0015.jpg" alt="aqua 8">
+            <img src="img/DSCF0039.jpg" alt="aqua 9">
+            <img src="img/DSCF0052.jpg" alt="aqua 10">
+            <img src="img/DSCF0053.jpg" alt="aqua 11"> 
+            <img src="img/DSCF0444.jpg" alt="aqua 12">
+            <img src="img/DSCF0877.jpg" alt="aqua 13">
+            <img src="img/IMG_20190317_163338.jpg" alt="aqua 14">
+            <img src="img/IMG_20230729_165916.jpg" alt="aqua 15">
+            <img src="img/IMG_20230912_172325.jpg" alt="aqua 16">
+            <img src="img/IMG_20231012_184707.jpg" alt="aqua 17">
+            <img src="img/IMG_20231108_184141.jpg" alt="aqua 18">
+            <img src="img/IMG_20231108_195841.jpg" alt="aqua 19">
+            <img src="img/IMG_20231209_091101.jpg" alt="aqua 20">
+            <img src="img/IMG_20260325_173246.jpg" alt="aqua 21">
+            <img src="img/IMG_20260727_184603.jpg" alt="aqua 22">
+        </div>
+        <!-- LIGHTBOX FULLSCREEN -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+
+    </div>
+
+    <script defer src="js/script.js">
+        // LIGHTBOX FULLSCREEN
+        const images = document.querySelectorAll('.gallery-full img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox .close');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

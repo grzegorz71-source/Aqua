@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Zakładanie Ogrodów M. Zawieja</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="logo-image" src="img_logo/Moje.jpg" width="100" height="100" alt="Logo Grzegorz Nowicki">
+            Grzegorz Nowicki
+            <nav>
+                <h1 class="logo">🪼 Zakładanie Akwariów 🪼</h1>
+                <div class="nav-links">
+                    <a href="index.html">Strona główna</a>
+                    <!-- <a href="uslugi.html">Usługi</a> -->
+                    <a href="gallery.html">Galeria</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- FORMULARZ KONTAKTOWY -->
+        <section id="formularz" class="section reveal">
+            <h2>Formularz kontaktowy</h2>
+
+            <form id="contactForm" class="contact-form">
+                <input type="text" name="name" placeholder="Imię i nazwisko" required>
+                <input type="email" name="email" placeholder="Adres e-mail" required>
+                <input type="text" name="phone" placeholder="Numer telefonu (opcjonalnie)">
+                <textarea name="message" rows="5" placeholder="Twoja wiadomość..." required></textarea>
+
+                <button type="submit" class="btn">Wyślij wiadomość</button>
+            </form>
+
+            <p id="formStatus" style="color:green; display:none; margin-top:10px;">
+                Dziękujemy! Twoja wiadomość została wysłana.
+            </p>
+        </section>
+
+        <!-- TWÓJ KONTAKT -->
+        <section class="section reveal">
+            <h2>Bezpośredni kontakt</h2>
+
+            <p><strong>Imię i nazwisko:</strong> Grzegorz Nowicki</p>
+            <p><strong>Telefon:</strong> <a type="tel" href="tel:883616515">883 616 515</a></p>
+            <p><strong>E-mail:</strong> agip240571@wp.pl</p>
+            <p><strong>Lokalizacja:</strong> Poznań, woj. wielkopolskie</p>
+
+            <!-- POWIĄZANY PRZYCISK -->
+            <a href="kontakt.html#formularz" class="btn">Napisz do nas</a>
+            <a href="tel:883616515" class="btn" style="margin-left:10px;">Zadzwoń</a>
+
+
+        </section>
+
+    </div>
+
+    <script defer src="js/script.js"></script>
+
+</body>
+
+</html>

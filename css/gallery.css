@@ -1,0 +1,42 @@
+.logo-image {
+  size: 50px;
+  border-radius: 50%;
+  width: 75px;
+  height: 85px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-thumbs img {
+  width: max(1000px, 20%);
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-thumbs img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-full img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-full img:hover {
+  transform: scale(1.03);
+}
