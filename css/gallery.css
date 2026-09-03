@@ -9,10 +9,12 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
 .gallery-thumbs img {
-  width: max(1000px, 20%);
+  width: max(200px, 30%);
   height: 120px;
   object-fit: cover;
   border-radius: 10px;

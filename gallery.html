@@ -7,6 +7,7 @@
     <title>Galeria realizacji ogrodów</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -54,31 +55,7 @@
 
     </div>
 
-    <script defer src="js/script.js">
-        // LIGHTBOX FULLSCREEN
-        const images = document.querySelectorAll('.gallery-full img');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const closeBtn = document.querySelector('.lightbox .close');
 
-        images.forEach(img => {
-            img.addEventListener('click', () => {
-                lightbox.style.display = 'flex';
-                lightboxImg.src = img.src;
-            });
-        });
-
-        closeBtn.addEventListener('click', () => {
-            lightbox.style.display = 'none';
-        });
-
-        lightbox.addEventListener('click', (e) => {
-            if (e.target !== lightboxImg) {
-                lightbox.style.display = 'none';
-            }
-        });
-
-    </script>
 </body>
 
 </html>
