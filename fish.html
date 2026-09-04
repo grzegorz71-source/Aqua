@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Katalog ryb akwariowych</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fish_style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/lake_style.css">
+
+    <script src="js/fish-script.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <div class="logo-text">
+                <h1>Katalog ryb akwariowych</h1>
+                <span>Gatunki przypisane do biotopów</span>
+            </div>
+        </div>
+        <hr>
+        <a href="index.html" class="back-link">Powrót do strony głównej</a>
+
+        <hr>
+        <div class="filters">
+            <label for="filter-biotop">Biotop:</label>
+            <select id="filter-biotop">
+                <option value="all">Wszystkie</option>
+                <option value="Amazonia">Amazonia</option>
+                <option value="Afryka">Afryka</option>
+                <option value="Azja">Azja</option>
+                <option value="Ameryka Środkowa">Ameryka Środkowa</option>
+                <option value="Ameryka Południowa">Ameryka Południowa</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Biotopy</h2>
+            <ul class="family-list" id="biotope-list">
+                <li data-biotop="Amazonia">Amazonia</li>
+                <li data-biotop="Afryka">Afryka</li>
+                <li data-biotop="Azja">Azja</li>
+                <li data-biotop="Ameryka Środkowa">Ameryka Środkowa</li>
+                <li data-biotop="Ameryka Południowa">Ameryka Południowa</li>
+            </ul>
+        </aside>
+
+        <section class="catalog-wrapper">
+            <div id="biotope-description" class="biotope-description"></div>
+
+            <section class="catalog" id="catalog">
+
+                <!-- AMAZONIA -->
+                <article class="fish-card" data-biotop="Amazonia" data-fish="neon-innesa">
+                    <h3>Neon Innesa <span>Paracheirodon innesi</span></h3>
+                    <p>Ryba ławicowa o niebiesko‑czerwonym pasie.</p>
+                </article>
+
+                <article class="fish-card" data-biotop="Amazonia" data-fish="skalar">
+                    <h3>Skalar <span>Pterophyllum scalare</span></h3>
+                    <p>Majestatyczna pielęgnica o wysokim ciele.</p>
+                </article>
+
+                <article class="fish-card" data-biotop="Amazonia" data-fish="dyskowiec">
+                    <h3>Dyskowiec <span>Symphysodon aequifasciatus</span></h3>
+                    <p>Jedna z najpiękniejszych ryb akwariowych.</p>
+                </article>
+
+                <article class="fish-card" data-biotop="Amazonia" data-fish="Zbrojnik_niebieski">
+                    <h3>Zbrojnik niebieski (glonojad) <span>Ancistrus sp.</span></h3>
+                    <p>Ryba odżywiająca się glonami.</p>
+                </article>
+
+
+                <article class="fish-card" data-biotop="Amazonia" data-fish="pielegnica pawiooka">
+                    <h3>Oskar-pielęgnica pawiooka <span> Astronotus ocellatus </span></h3>
+                    <p>Ryba </p>
+
+
+                </article>
+                <!-- AFRYKA -->
+                <article class="fish-card" data-biotop="Afryka" data-fish="barwniak-szmaragdowy">
+                    <h3>Barwniak szmaragdowy <span>Pelvicachromis taeniatus</span></h3>
+                    <p>Spokojna pielęgnica z Afryki Zachodniej.</p>
+                </article>
+
+                <article class="fish-card" data-biotop="Afryka" data-fish="muszlowiec">
+                    <h3>Muszlowiec <span>Neolamprologus multifasciatus</span></h3>
+                    <p>Mała pielęgnica z jeziora Tanganika.</p>
+                </article>
+
+                <!-- AZJA -->
+                <article class="fish-card" data-biotop="Azja" data-fish="danio-pregowany">
+                    <h3>Danio pręgowany <span>Danio rerio</span></h3>
+                    <p>Odporna ryba ławicowa.</p>
+                </article>
+
+                <!-- AMERYKA ŚRODKOWA -->
+                <article class="fish-card" data-biotop="Ameryka Środkowa" data-fish="platka">
+                    <h3>Platka <span>Xiphophorus maculatus</span></h3>
+                    <p>Kolorowa żyworódka.</p>
+                </article>
+
+                <!-- AMERYKA POŁUDNIOWA -->
+                <article class="fish-card" data-biotop="Ameryka Południowa" data-fish="gupik">
+                    <h3>Gupik <span>Poecilia reticulata</span></h3>
+                    <p>Kolorowa żyworódka.</p>
+                </article>
+
+
+
+            </section>
+
+            <div id="empty-state" class="empty-state">Brak ryb w tym biotopie.</div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div id="fish-modal" class="fish-modal">
+        <div class="fish-modal-content">
+            <button id="fish-modal-close">×</button>
+
+            <h2 id="fish-modal-name"></h2>
+            <h4 id="fish-modal-latin"></h4>
+
+            <div class="fish-gallery">
+                <button class="gallery-prev">⟨</button>
+                <img id="fish-gallery-img" src="" alt="">
+                <button class="gallery-next">⟩</button>
+            </div>
+
+            <p id="fish-modal-desc"></p>
+        </div>
+    </div>
+    footer>
+    <p>&copy; 2026 Grzegorz Nowicki. Zdjęcia ryb w zakładce "Biotopy" zaczerpnięte z różnych źródeł.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
