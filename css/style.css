@@ -6,6 +6,9 @@ body {
 }
 
 header {
+  border-collapse: collapse;
+  border-radius: 20px;
+  margin: 0;
   background: linear-gradient(to left, #0552e2, #ac7ef6e8);
   color: #fff;
   padding: 20px;
@@ -15,6 +18,8 @@ header {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
+  width: 100%; /* <<< ważne */
+  box-sizing: border-box;
 }
 
 .akapit {
@@ -25,6 +30,7 @@ header {
   text-align: left;
   display: flex;
   gap: 60px;
+  flex-wrap: wrap; /* <<< to jest kluczowe */
 }
 
 .section {
@@ -120,6 +126,8 @@ header {
 
 /* Reveal animation */
 .reveal {
+  padding: 20px;
+  border-radius: 12px;
   background: #2199e9af;
   opacity: 0;
   transform: translateY(30px);
