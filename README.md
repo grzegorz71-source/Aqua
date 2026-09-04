@@ -1,5 +1,4 @@
-# Aqua — Profesjonalne Usługi związane z pielęgnacją akwariów.
-
+# Aqua — kompleksowa opieka nad akwariami i aranżacja zbiorników
 Aqua to strona internetowa prezentująca ofertę usług związanych z pielęgnacją akwariów, systemami filtracyjnymi, oraz pracami porządkowymi w akwariach.  
 Projekt został zaprojektowany z myślą o przejrzystości, szybkości działania i łatwej komunikacji z klientem.
 
